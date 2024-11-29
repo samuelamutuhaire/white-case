@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page with Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0a0a0a; 
+      margin: 0;
+      height: 100vh;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      background-color: #121212; /* Dark background */
+      padding: 10px 20px;
+    }
+
+    .navbar-brand {
+      color: #f76b38; /* Orange logo color */
+      font-weight: bold;
+      font-size: 24px;
+    }
+
+    .nav-link {
+      color: #ccc; /* Light grey for nav items */
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    .nav-link:hover {
+      color: #f76b38; /* Hover effect on links */
+    }
+
+    /* Centering the login container */
+    .login-container {
+      background-color: #1f1f1f; /* Slightly lighter but still dark */
+      border-radius: 8px;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      margin-top: 50px; /* Offset for the navbar */
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      color: #f76b38; /* Soft orange */
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 18px;
+      text-align: center;
+      color: #ffffff; /* White text */
+      margin-bottom: 25px;
+    }
+
+    label {
+      font-size: 14px;
+      color: #cccccc; /* Light grey */
+    }
+
+    .form-control {
+      background-color: #2b2b2b; /* Dark grey for inputs */
+      border: 1px solid #444444; /* Dark border */
+      color: #fff;
+    }
+
+    .form-control:focus {
+      background-color: #2b2b2b;
+      color: #fff;
+      border-color: #f76b38; /* Soft orange border on focus */
+      box-shadow: none;
+    }
+
+    .form-check-label {
+      font-size: 14px;
+      color: #cccccc; /* Light grey for checkbox label */
+    }
+
+    .forgot-password {
+      font-size: 14px;
+      color: #f76b38; /* Soft orange */
+      text-decoration: none;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .btn-primary {
+      background-color: #f76b38; /* Soft orange for button */
+      border: none;
+      font-size: 16px;
+      padding: 10px 15px;
+    }
+
+    .btn-primary:hover {
+      background-color: #d65b29; /* Darker orange when hovered */
+    }
+
+    .btn-outline-primary {
+      color: #f76b38; /* Outline button color */
+      border-color: #f76b38;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: #f76b38;
+      color: white;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #777777; /* Light grey text */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#">Frontend Masters</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Learn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-primary" href="#">Join Now</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Login Container -->
+  <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="login-container">
+      <header>
+        <h1>Frontend Masters</h1>
+      </header>
+      <main>
+        <h2>Sign in to your account</h2>
+        <form>
+          <div class="mb-4">
+            <label for="username" class="form-label">Username or Email</label>
+            <input type="text" class="form-control" id="username" placeholder="Enter your username or email" required>
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Remember Me</label>
+            </div>
+            <a href="#" class="forgot-password">Forgot your password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Continue</button>
+        </form>
+      </main>
+      <footer>
+        &copy; 2024 Frontend Masters
+      </footer>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
